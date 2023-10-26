@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  transition: ease 0.5s;
+}
+#poweredBy {
+  padding: 3px 10px;
+  text-align: right;
+  background-color: black;
+}
+#poweredBy > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: white;
+  font-size: 4vh;
+}
+.visible {
+  top: 0;
+}
+
+.hidden {
+  top: -60px;
+}
+@media screen and (max-width: 760px) {
+  #poweredBy {
+    display: none;
+  }
+}
